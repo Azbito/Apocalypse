@@ -4,6 +4,7 @@ function gameFront()
   if gameState == 1 then
     love.graphics.setFont(myFont)
     love.graphics.printf("Click anywhere to begin!", 0, 50, love.graphics.getWidth(), "center")
+    score = 0
   end
 
   love.graphics.draw(sprites.player, player.x, player.y, playerMouseAngle(), nil, nil, sprites.player:getWidth()/2, sprites.player:getHeight()/2)
